@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import "./App.css";
 import Home from "./pages/Home";
-import Login from "./pages/login";
+import Login from "./pages/Login";
 import Register from "./pages/Register";
 import "./Style.scss";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
@@ -14,6 +14,7 @@ function App() {
     if (!currentUser) {
       return <Navigate to="/login" />;
     }
+    return children;
   };
   return (
     <BrowserRouter>
