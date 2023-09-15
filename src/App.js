@@ -16,10 +16,11 @@ function App() {
     }
     return children;
   };
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/">
+        <Route path="/" element={<Home />}>
           <Route
             index
             element={
